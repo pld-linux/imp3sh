@@ -3,7 +3,7 @@ Summary(pl):	Elastyczny odtwarzacz mp3/ogg z podobnym do pow³oki interfejsem
 Name:		imp3sh
 Version:	0.2.4
 Release:	1
-License:	GPL
+License:	GPL, but uses commercial xaudio library
 Group:		Applications/Sound
 Source0:	http://www.geocities.com/kman_can/%{name}-%{version}.tar.gz
 # Source0-md5:	82299c403a3bcb69519c0aefa319c372
@@ -14,6 +14,7 @@ BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	ncurses-devel
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
