@@ -1,11 +1,11 @@
 Summary:	Flexible mp3/ogg player with a shell-like interface
-Summary(pl):	Elastyczny mp3/ogg player z shell-podobnym interfejsem
+Summary(pl):	Elastyczny odtwarzacz mp3/ogg z podobnym do pow³oki interfejsem
 Name:		imp3sh
 Version:	0.2.4
 Release:	1
 License:	GPL
 Group:		Applications/Sound
-Source0: 	http://www.geocities.com/kman_can/%{name}-%{version}.tar.gz
+Source0:	http://www.geocities.com/kman_can/%{name}-%{version}.tar.gz
 # Source0-md5:	82299c403a3bcb69519c0aefa319c372
 URL:		http://www.geocities.com/kman_can/
 BuildRequires:	autoconf
@@ -23,10 +23,10 @@ uses the Xaudio Asynchronous Library for decoding MP3's and the libogg
 and libvorbis libraries.
 
 %description -l pl
-imp3sh jest mp3/ogg playerem z shell-podobnym interfejsem, wbudowane
-jest w niego ponad 90 poleceñ. imp3sh jest pe³ni funkcjê shella. Do
-dzia³ania u¿ywa biblioteki Xaudio Asynchronous do dekodowania MP3,
-libogg i libvorbis.
+imp3sh jest odtwarzaczem mp3/ogg z podobnym do pow³oki interfejsem,
+wbudowane jest w niego ponad 90 poleceñ. imp3sh równie¿ pe³ni funkcjê
+pow³oki. U¿ywa biblioteki Xaudio Asynchronous do dekodowania MP3 oraz
+bibliotek libogg i libvorbis.
 
 %prep
 %setup -q
@@ -35,7 +35,7 @@ libogg i libvorbis.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
+CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 %configure
 %{__make}
 
