@@ -41,14 +41,14 @@ CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_docdir},%{_bindir}}
 
-install %{name} $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc BUGS COPYING CHANGES README TODO
-%attr(755,root,root) %{_bindir}/%{name}
+%doc BUGS CHANGES README TODO
+%attr(755,root,root) %{_bindir}/*
