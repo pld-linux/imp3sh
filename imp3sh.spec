@@ -10,10 +10,10 @@ Source0:	http://www.geocities.com/kman_can/%{name}-%{version}.tar.gz
 URL:		http://www.geocities.com/kman_can/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	ncurses-devel
 BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
