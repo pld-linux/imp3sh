@@ -1,5 +1,5 @@
-Summary:	Flexible mp3/ogg player with a shell-like interface
-Summary(pl):	Elastyczny odtwarzacz mp3/ogg z podobnym do pow³oki interfejsem
+Summary:	Flexible MP3/ogg player with a shell-like interface
+Summary(pl):	Elastyczny odtwarzacz MP3/ogg z podobnym do pow³oki interfejsem
 Name:		imp3sh
 Version:	0.2.4
 Release:	1
@@ -18,13 +18,13 @@ ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-imp3sh is an mp3/ogg player with a shell-like interface and over 90
+imp3sh is an MP3/ogg player with a shell-like interface and over 90
 built-in commands and hotkeys. imp3sh is also a terminal shell. imp3sh
 uses the Xaudio Asynchronous Library for decoding MP3's and the libogg
 and libvorbis libraries.
 
 %description -l pl
-imp3sh jest odtwarzaczem mp3/ogg z podobnym do pow³oki interfejsem,
+imp3sh jest odtwarzaczem MP3/ogg z podobnym do pow³oki interfejsem,
 wbudowane jest w niego ponad 90 poleceñ. imp3sh równie¿ pe³ni funkcjê
 pow³oki. U¿ywa biblioteki Xaudio Asynchronous do dekodowania MP3 oraz
 bibliotek libogg i libvorbis.
