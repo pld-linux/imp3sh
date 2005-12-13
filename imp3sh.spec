@@ -36,7 +36,7 @@ bibliotek libogg i libvorbis.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
+CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %configure
 %{__make}
 
