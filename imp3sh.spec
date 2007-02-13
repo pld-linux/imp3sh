@@ -1,5 +1,5 @@
 Summary:	Flexible MP3/Ogg player with a shell-like interface
-Summary(pl.UTF-8):   Elastyczny odtwarzacz MP3/Ogg z podobnym do powłoki interfejsem
+Summary(pl.UTF-8):	Elastyczny odtwarzacz MP3/Ogg z podobnym do powłoki interfejsem
 Name:		imp3sh
 Version:	0.2.4
 Release:	1
